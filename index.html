@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cool Breeze Heating & Air</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#0c4a6e;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    margin-left:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,71,107,.7),rgba(0,71,107,.7)),
+    url("https://images.unsplash.com/photo-1581092919535-7146ff1a590d?auto=format&fit=crop&w=1600&q=80") center/cover;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0284c7;
+}
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+    color:#0c4a6e;
+    font-size:36px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin:15px 0;
+    color:#0c4a6e;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+.why{
+    background:#0c4a6e;
+    color:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.why-card{
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#083344;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+nav li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">❄️ Cool Breeze HVAC</div>
+
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<h1>Keeping Your Home Comfortable Year-Round</h1>
+
+<p>Professional Heating & Air Conditioning Installation, Repair, and Maintenance.</p>
+
+<a href="#contact" class="btn">Request a Free Estimate</a>
+</section>
+
+<section id="services">
+<div class="container">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>❄️ AC Repair</h3>
+<p>Fast, reliable repairs to restore your home's comfort.</p>
+</div>
+
+<div class="card">
+<h3>🏠 AC Installation</h3>
+<p>Energy-efficient systems professionally installed.</p>
+</div>
+
+<div class="card">
+<h3>🔥 Heating Services</h3>
+<p>Furnace repair, replacement, and maintenance.</p>
+</div>
+
+<div class="card">
+<h3>🛠 Preventative Maintenance</h3>
+<p>Keep your HVAC system running efficiently all year.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="why">
+
+<div class="container">
+
+<h2 class="section-title" style="color:white;">Why Choose Us?</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+<h3>Licensed & Insured</h3>
+<p>Experienced certified technicians.</p>
+</div>
+
+<div class="why-card">
+<h3>24/7 Emergency Service</h3>
+<p>We're here when you need us most.</p>
+</div>
+
+<div class="why-card">
+<h3>Affordable Pricing</h3>
+<p>Honest estimates with no hidden fees.</p>
+</div>
+
+<div class="why-card">
+<h3>100% Satisfaction</h3>
+<p>Your comfort is our priority.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<h2 class="section-title" style="text-align:left;">About Us</h2>
+
+<p>
+Cool Breeze HVAC has proudly served homeowners and businesses with dependable heating and cooling solutions. Our experienced technicians are dedicated to providing quality workmanship, honest pricing, and exceptional customer service.
+</p>
+
+<br>
+
+<a href="#contact" class="btn">Schedule Service</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p>📞 (555) 123-4567</p>
+
+<p>📧 info@coolbreezehvac.com</p>
+
+<p>📍 123 Main Street, Your City, ST 12345</p>
+
+<br>
+
+<a class="btn" href="mailto:info@coolbreezehvac.com">Email Us</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Cool Breeze HVAC | Licensed & Insured | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
